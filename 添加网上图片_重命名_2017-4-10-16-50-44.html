@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			#tabone{
+				border: solid 1px black;
+				width: 100px;
+				height: 100px;
+				border-collapse: collapse;
+			}
+			td{
+				border: solid 1px black;
+				
+			}
+		</style>
+	</head>
+	<script type="text/javascript" src="js/bmob-min.js"></script>
+	
+	<!--Ê∑ªÂä†‰∏ÄË°å-->
+	<!--<script>
+		Bmob.initialize("23ac308ea2aa7eddd168e0ec27de3903", "e8f7ef6605f6b8247a5b2609c6ea0649");
+		var GameScore = Bmob.Object.extend("studentsection");
+		var arr=["http://img0.bdstatic.com/static/searchresult/img/logo-2X_b99594a.png", "http://img1.bdstatic.com/static/common/widget/shitu/images/camera_new_off_a552294.png", "http://img2.bdstatic.com/static/common/widget/shitu/images/camera_new_on_4e3e250.png", "http://img2.bdstatic.com/static/common/widget/shitu/images/mark_b68ff2e.png", "http://img1.bdstatic.com/img/image/shitu/feimg/uploading.gif", "http://image.baidu.com/search/index?tn=baiduimage&‚Ä¶%E8%B6%85%E5%9B%BE%E7%89%87&ala=0&alatpl=sp&pos=0", "http://img2.imgtn.bdimg.com/it/u=3814089697,1601653559&fm=23&gp=0.jpg", "http://img2.imgtn.bdimg.com/it/u=559280242,3629937094&fm=23&gp=0.jpg", "http://img5.imgtn.bdimg.com/it/u=1621787287,672239326&fm=23&gp=0.jpg", "http://img5.imgtn.bdimg.com/it/u=2179978971,4033056474&fm=23&gp=0.jpg", "http://img3.imgtn.bdimg.com/it/u=1122904707,3692969512&fm=23&gp=0.jpg", "http://img4.imgtn.bdimg.com/it/u=831479040,1172852968&fm=23&gp=0.jpg", "http://img5.imgtn.bdimg.com/it/u=836137444,2801594881&fm=23&gp=0.jpg", "http://img2.imgtn.bdimg.com/it/u=307569683,3583174869&fm=23&gp=0.jpg", "http://img3.imgtn.bdimg.com/it/u=1535665794,3358067125&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=3460663319,1606277598&fm=23&gp=0.jpg", "http://img5.imgtn.bdimg.com/it/u=882812865,210167078&fm=23&gp=0.jpg", "http://img4.imgtn.bdimg.com/it/u=764619498,3004829080&fm=23&gp=0.jpg", "http://img3.imgtn.bdimg.com/it/u=3130993103,746323276&fm=23&gp=0.jpg", "http://img2.imgtn.bdimg.com/it/u=1610537299,883134223&fm=23&gp=0.jpg", "http://img5.imgtn.bdimg.com/it/u=1681857709,2837459402&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=1802819017,4276461172&fm=23&gp=0.jpg", "http://img2.imgtn.bdimg.com/it/u=1253538553,1567876375&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=74243032,1517565885&fm=23&gp=0.jpg", "http://img3.imgtn.bdimg.com/it/u=2734488668,1826237039&fm=23&gp=0.jpg", "http://img3.imgtn.bdimg.com/it/u=285932917,2163684638&fm=23&gp=0.jpg", "http://img2.imgtn.bdimg.com/it/u=1867467369,1038953093&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=2119645353,4031229098&fm=23&gp=0.jpg", "http://img0.imgtn.bdimg.com/it/u=2434909355,157873&fm=23&gp=0.jpg", "http://img4.imgtn.bdimg.com/it/u=3044442480,150440848&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=1383068982,1529123671&fm=23&gp=0.jpg", "http://img4.imgtn.bdimg.com/it/u=2154836904,931232716&fm=23&gp=0.jpg", "http://img0.imgtn.bdimg.com/it/u=1732966228,1181478116&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=4249592550,1449744785&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=1620749316,651447727&fm=23&gp=0.jpg", "http://img5.imgtn.bdimg.com/it/u=3024570486,1280157279&fm=23&gp=0.jpg", "http://img5.imgtn.bdimg.com/it/u=1681857709,2837459402&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=1444064409,774904624&fm=23&gp=0.jpg", "http://img3.imgtn.bdimg.com/it/u=1535665794,3358067125&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=2177667698,1957176779&fm=23&gp=0.jpg", "http://img3.imgtn.bdimg.com/it/u=1861010622,2072808183&fm=23&gp=0.jpg", "http://img2.imgtn.bdimg.com/it/u=160371931,4293579293&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=3311915278,3377916091&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=4249592550,1449744785&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=3460663319,1606277598&fm=23&gp=0.jpg", "http://img2.imgtn.bdimg.com/it/u=1253538553,1567876375&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=74243032,1517565885&fm=23&gp=0.jpg", "http://img3.imgtn.bdimg.com/it/u=217554952,2649370241&fm=23&gp=0.jpg", "http://img4.imgtn.bdimg.com/it/u=3915956327,4289396703&fm=23&gp=0.jpg", "http://img0.imgtn.bdimg.com/it/u=3448248951,1720878667&fm=23&gp=0.jpg", "http://img2.imgtn.bdimg.com/it/u=3223013504,846017736&fm=23&gp=0.jpg", "http://img4.imgtn.bdimg.com/it/u=586201538,4175706294&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=1620749316,651447727&fm=23&gp=0.jpg", "http://img2.imgtn.bdimg.com/it/u=3124405614,4245593118&fm=23&gp=0.jpg", "http://img4.imgtn.bdimg.com/it/u=1597630371,3814671347&fm=23&gp=0.jpg", "http://img2.imgtn.bdimg.com/it/u=307569683,3583174869&fm=23&gp=0.jpg", "http://img5.imgtn.bdimg.com/it/u=3473549096,281076645&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=3154651079,3149698974&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=3532069016,3989433699&fm=23&gp=0.jpg", "http://img0.imgtn.bdimg.com/it/u=1732966228,1181478116&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=3773661868,2763477619&fm=23&gp=0.jpg", "http://img5.imgtn.bdimg.com/it/u=528001416,2427399815&fm=23&gp=0.jpg", "http://img4.imgtn.bdimg.com/it/u=3044442480,150440848&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=1802819017,4276461172&fm=23&gp=0.jpg", "http://img0.imgtn.bdimg.com/it/u=2285453794,53759600&fm=23&gp=0.jpg", "http://img5.imgtn.bdimg.com/it/u=782426733,1014005348&fm=23&gp=0.jpg", "http://img0.imgtn.bdimg.com/it/u=2834774947,3852381753&fm=23&gp=0.jpg", "http://img0.imgtn.bdimg.com/it/u=304280608,492512258&fm=23&gp=0.jpg", "http://img3.imgtn.bdimg.com/it/u=3264230738,2527196819&fm=23&gp=0.jpg", "http://img4.imgtn.bdimg.com/it/u=1095800674,3954275356&fm=23&gp=0.jpg", "http://img5.imgtn.bdimg.com/it/u=2878240537,1889965808&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=3711583522,646504993&fm=23&gp=0.jpg", "http://img3.imgtn.bdimg.com/it/u=1511209171,3697113006&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=1707756103,244997412&fm=23&gp=0.jpg", "http://img3.imgtn.bdimg.com/it/u=1535003789,41742844&fm=23&gp=0.jpg", "http://img4.imgtn.bdimg.com/it/u=3936264527,2238438999&fm=23&gp=0.jpg", "http://img4.imgtn.bdimg.com/it/u=3548793985,2144167063&fm=23&gp=0.jpg", "http://img5.imgtn.bdimg.com/it/u=1240917832,1840478053&fm=23&gp=0.jpg", "http://img5.imgtn.bdimg.com/it/u=3912608369,1752168652&fm=23&gp=0.jpg", "http://img0.imgtn.bdimg.com/it/u=3472717278,3721487242&fm=23&gp=0.jpg", "http://img3.imgtn.bdimg.com/it/u=503908286,2970426121&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=1857378964,1358972595&fm=23&gp=0.jpg", "http://img5.imgtn.bdimg.com/it/u=1772826284,2909701465&fm=23&gp=0.jpg", "http://img5.imgtn.bdimg.com/it/u=2938370738,3129842071&fm=23&gp=0.jpg", "http://img0.imgtn.bdimg.com/it/u=4230960696,4202913148&fm=23&gp=0.jpg", "http://img4.imgtn.bdimg.com/it/u=2589052621,2001130477&fm=23&gp=0.jpg", "http://img0.imgtn.bdimg.com/it/u=903346111,3670326009&fm=23&gp=0.jpg", "http://img4.imgtn.bdimg.com/it/u=3814273663,2856793669&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=490732920,482259253&fm=23&gp=0.jpg", "http://img5.imgtn.bdimg.com/it/u=3585318287,990937102&fm=23&gp=0.jpg", "http://img2.imgtn.bdimg.com/it/u=4029543156,3784144842&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=2779658906,2195381019&fm=23&gp=0.jpg", "http://img3.imgtn.bdimg.com/it/u=1267602934,1479537947&fm=23&gp=0.jpg", "http://img2.imgtn.bdimg.com/it/u=1290553301,2520599229&fm=23&gp=0.jpg", "http://img0.imgtn.bdimg.com/it/u=3677270076,4060857460&fm=23&gp=0.jpg", "http://img5.imgtn.bdimg.com/it/u=4023556990,2095453199&fm=23&gp=0.jpg", "http://img5.imgtn.bdimg.com/it/u=1031462039,2633757018&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=3783968616,1238022311&fm=23&gp=0.jpg", "http://img4.imgtn.bdimg.com/it/u=3152660311,1217215843&fm=23&gp=0.jpg", "http://img1.imgtn.bdimg.com/it/u=164972114,1700797181&fm=23&gp=0.jpg"];
+	    var gameScore = new GameScore();
+	    gameScore.set("qunima", arr); //ÂÖ®Â±ÄÂèòÈáèËÆæÁΩÆÔºå‰øùÂ≠òÊï∞ÊçÆ
+	    gameScore.save(null, {
+      	success: function(object) {
+        	alert("create object success, object id:"+object.id);
+        	//create object success
+      	},
+      	error: function(model, error) {
+   			 alert("create object fail");
+      	}
+    });
+	</script>-->
+	<script>
+		Bmob.initialize("23ac308ea2aa7eddd168e0ec27de3903", "e8f7ef6605f6b8247a5b2609c6ea0649");
+		var GameScore = Bmob.Object.extend("studentsection");
+    	var query = new Bmob.Query(GameScore);
+    	query.get("13d71e2e42", {    //Á©∫Ê†º‰πüËØÜÂà´
+ 			 success: function(object) {
+	        	// The object was retrieved successfully.
+	       		// alert(object.get("imgSrc"));	       		
+	       		var body=document.body;
+	       		var srcs=object.get("qunima");
+	       		
+	       		for(var i=0;i<srcs.length;i++){
+	       			var img=document.createElement("img");
+	       			var tab=document.getElementById("tabone");
+	       			var tr=document.createElement("tr");
+	       			var td=document.createElement("td");
+	       			var tet=document.createTextNode(srcs[i]);
+	       			td.appendChild(tet);
+	       			tr.appendChild(td);
+	       			tab.appendChild(tr);
+	       			body.appendChild(tab);
+	       		};
+      		},
+      		error: function(object, error) {
+       		 	alert("query object fail");
+      		}
+    	});
+	</script>   
+		
+	<!--ÂÖàÊâßË°å-->
+	
+	
+	<body>
+		<table id="tabone">
+			
+		</table>
+		<img src="http://img4.imgtn.bdimg.com/it/u=3044442480,150440848&fm=23&gp=0.jpg" />
+		<!--<script>
+			var tds=document.getElementsByTagName("td");
+			console.log(tds.length);
+			for(var i=0;i<tds.length;i++){
+				var num;
+				num=parseInt(tds[i].innerHTML);
+				console.log(num)
+				//È¶ñÂÖàÊâßË°å
+			}
+		</script>-->
+	</body>
+</html><!--˛M∞ÌHr–ó˜/˝ZUFæÁÿÓßÁv}#Q„]/Ó?»º"`~øwƒ∑Ô–ã€ÉëÃæäù(F´1p˚)º€ı¢]Á;#£ü0ú2ø—'/›:¥écYqå*ı¶<KIÉêAEÅ)jëX<¯Ûc˜π,1œ¢ñ
+U%©˚≥Ωí∆∞î[O1#~Èb%˘ 5é,µi∫F^J#∂FŒacS¯&Cû≤_KOa,QoÎŸ≤!ï·˜”`?PïgØ`åÓÓFe†K(Ω‰ÈÍpr„Ute(ö√ãlå* 1±ﬂÙ©ºüV‡æÍù0¨∆‚qùì G¸ë‘]!∑?ûﬁ»\SYrÛ≠+πñ1¶Á@ä¥'ÏTòﬁ<√3Ãº0(Ó‰oÄ+;\2ﬁ_ÛÄÇøÙ"Ö#ï≤r”ñ\Ü/ÕäØÔπRÇV±∆ƒ@Ò #äØÁâBc˙¸°ç—Øé¯Qπ(&([Z3˝\GØ4ô√’ÃÛQZh·¬÷ÏHm‘ç)v©éπZØctCy'õÒLÇaq‹g‚Ôõ!ï´ﬂGƒ"ûﬂ`–‰ ‹‹R«¯‹‹‹‹‹‹ëN‡ÒZ˙‹ ‹‹-->
